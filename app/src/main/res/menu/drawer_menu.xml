@@ -1,19 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:id="@+id/fragmentNumberOne"
-        android:title="Numero 1"
-        android:icon="@drawable/ic_audiotrack_black_24dp"
-        />
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/fragmentNumberOne"
+            android:title="Numero 1"
+            android:icon="@drawable/ic_audiotrack_black_24dp"
+            />
 
-    <item android:id="@+id/fragmentNumberTwo"
-        android:title="Numero 2"
-        android:icon="@drawable/ic_android_black_24dp"
-        />
+        <item android:id="@+id/fragmentNumberTwo"
+            android:title="Numero 2"
+            android:icon="@drawable/ic_android_black_24dp"
+            />
 
-    <item android:id="@+id/fragmentNumberThree"
-        android:title="Numero 3"
-        android:icon="@drawable/ic_build_black_24dp"
-        />
+        <item android:id="@+id/fragmentNumberThree"
+            android:title="Numero 3"
+            android:icon="@drawable/ic_build_black_24dp"
+            />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+
 
 </menu>
